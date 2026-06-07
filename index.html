@@ -115,6 +115,122 @@
     color: #fff;
     border-color: #0d9488;
   }
+  .chip.active-size {
+    background: #0e7490;
+    color: #fff;
+    border-color: #0e7490;
+  }
+
+  /* ===== TOOL BUTTONS (history / summary) ===== */
+  .tool-btn {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+  }
+  .tool-btn.summary { background: #0d9488; }
+  .tool-badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #ef4444;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1px 5px;
+    min-width: 16px;
+    text-align: center;
+  }
+
+  /* ===== HISTORY / SUMMARY LISTS ===== */
+  .h-item {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .h-item-top { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .h-item-shop { flex: 1; font-size: 14px; font-weight: bold; color: #111; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .h-item-total { font-size: 13px; font-weight: bold; color: #6c63ff; white-space: nowrap; }
+  .h-item-del { background: none; border: none; color: #9ca3af; font-size: 15px; cursor: pointer; padding: 2px 4px; }
+  .h-item-meta { font-size: 11px; color: #6b7280; display: flex; gap: 12px; }
+  .h-reorder-btn {
+    margin-top: 8px;
+    background: #ede9fe;
+    border: 1px solid #c4b5fd;
+    color: #6c63ff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .list-row { display: flex; align-items: center; gap: 8px; padding: 9px 4px; border-bottom: 1px solid #f3f4f6; font-size: 13px; }
+  .list-row .num { color: #9ca3af; font-size: 11px; min-width: 18px; }
+  .list-row .nm { flex: 1; }
+  .list-row .qty { color: #6b7280; min-width: 40px; text-align: center; font-weight: bold; }
+  .list-row .pr { color: #6c63ff; font-weight: bold; min-width: 84px; text-align: right; font-size: 12px; }
+  .empty-pad { text-align: center; color: #9ca3af; padding: 40px 20px; font-size: 14px; }
+  .foot-total { font-size: 18px; font-weight: bold; }
+
+  /* ===== PRODUCT MANAGEMENT ===== */
+  .btn-addnew {
+    width: 100%;
+    background: #22c55e;
+    color: #fff;
+    border: none;
+    padding: 11px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .mng-row { display: flex; align-items: center; gap: 8px; padding: 9px 4px; border-bottom: 1px solid #f3f4f6; }
+  .mng-info { flex: 1; min-width: 0; }
+  .mng-name { font-size: 13px; font-weight: 500; color: #111; }
+  .mng-meta { font-size: 11px; color: #6b7280; }
+  .mng-price { font-size: 13px; font-weight: bold; color: #6c63ff; white-space: nowrap; }
+  .mng-edit, .mng-del { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 6px 9px; font-size: 14px; cursor: pointer; }
+  .mng-del { border-color: #fca5a5; }
+  .field { margin-bottom: 10px; }
+  .field label { display: block; font-size: 12px; color: #6b7280; margin-bottom: 4px; font-weight: 600; }
+  .field input, .field select { width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 16px; font-family: inherit; background: #fff; color: #111; }
+  .btn-save { flex: 1; background: #6c63ff; color: #fff; border: none; padding: 11px; border-radius: 8px; font-size: 14px; font-weight: bold; font-family: inherit; cursor: pointer; }
+  .btn-danger { flex: 1; background: #ef4444; color: #fff; border: none; padding: 11px; border-radius: 8px; font-size: 14px; font-weight: bold; font-family: inherit; cursor: pointer; }
+  .btn-reset { background: #f3f4f6; color: #6b7280; border: 1px solid #e5e7eb; border-radius: 8px; padding: 9px 14px; font-size: 13px; font-family: inherit; cursor: pointer; width: 100%; }
+
+  /* ===== BEER-1 COUNTER (ນັບເບຍລາວ ລັງ ຕາມລູກຄ້າ) ===== */
+  .b1-card { display: flex; align-items: center; gap: 10px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px; margin-bottom: 8px; cursor: pointer; }
+  .b1-icon { font-size: 22px; flex-shrink: 0; }
+  .b1-info { flex: 1; min-width: 0; }
+  .b1-name { font-size: 14px; font-weight: bold; color: #111; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .b1-meta { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  .b1-total { font-size: 15px; font-weight: bold; color: #6c63ff; white-space: nowrap; text-align: right; }
+  .b1-stats { display: flex; gap: 8px; margin-bottom: 12px; }
+  .b1-stat { flex: 1; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; text-align: center; }
+  .b1-stat-val { font-size: 20px; font-weight: bold; color: #6c63ff; }
+  .b1-stat-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  .b1-entry { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+  .b1-entry-top { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .b1-entry-num { font-size: 11px; color: #6b7280; background: #fff; border: 1px solid #e5e7eb; border-radius: 20px; padding: 1px 8px; }
+  .b1-entry-date { font-size: 12px; color: #6b7280; }
+  .b1-entry-del { margin-left: auto; background: none; border: none; color: #9ca3af; font-size: 14px; cursor: pointer; padding: 2px 6px; }
+  .b1-entry-qty { font-size: 18px; font-weight: bold; color: #6c63ff; }
+  .b1-addform { background: #ede9fe; border: 1px dashed #c4b5fd; border-radius: 8px; padding: 12px; margin-top: 6px; }
+  .b1-addform-row { display: flex; gap: 8px; align-items: flex-end; flex-wrap: wrap; }
+  .b1-addform input { width: 100%; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; font-family: inherit; background: #fff; color: #111; }
 
   /* ===== PRODUCTS GRID ===== */
   .products-wrap {
@@ -409,11 +525,17 @@
 <!-- SEARCH -->
 <div class="search-bar">
   <input type="text" class="search-input" id="searchInput" placeholder="🔍 ຄົ້ນຫາສິນຄ້າ...">
+  <button class="tool-btn" onclick="openHistory()" title="ປະວັດອໍເດີ">📋<span class="tool-badge" id="historyBadge" style="display:none;">0</span></button>
+  <button class="tool-btn summary" onclick="openSummary()" title="ສະຫຼຸບຍອດຂາຍ">📊</button>
+  <button class="tool-btn" onclick="openManage()" title="ຈັດການສິນຄ້າ" style="background:#374151;">🛠️</button>
   <button class="btn-clear" onclick="clearSearch()">ລ້າງ</button>
 </div>
 
 <!-- CATEGORY FILTERS -->
 <div class="filters" id="categoryChips"></div>
+
+<!-- SIZE FILTERS (ສະແດງສະເພາະ soda) -->
+<div class="filters" id="sizeChips" style="display:none;"></div>
 
 <!-- UNIT FILTERS -->
 <div class="filters" id="unitChips"></div>
@@ -429,6 +551,7 @@
   <div class="shop-row">
     <input type="text" class="shop-input" id="shopNameInput" placeholder="ຊື່ຮ້ານ...">
     <button class="btn-customer" onclick="openCustomerModal()">👤 ລູກຄ້າ</button>
+    <button class="btn-customer" onclick="openBeer1()" style="background:#16a34a;" title="ນັບເບຍລາວ ລັງ">🍺</button>
   </div>
   <!-- CART BAR -->
   <div class="cart-bar">
@@ -472,6 +595,121 @@
   </div>
 </div>
 
+<!-- HISTORY MODAL -->
+<div class="modal" id="historyModal" onclick="if(event.target===this)closeHistory()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-title">📋 ປະວັດອໍເດີ</div>
+      <button class="btn-close" onclick="closeHistory()">✕</button>
+    </div>
+    <div class="modal-body" id="historyList"></div>
+    <div class="modal-foot">
+      <button class="btn-clear-cart" onclick="clearAllHistory()">🗑️ ລ້າງປະວັດທັງໝົດ</button>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER DETAIL MODAL -->
+<div class="modal" id="orderDetailModal" onclick="if(event.target===this)closeOrderDetail()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-title" id="odTitle">ລາຍລະອຽດອໍເດີ</div>
+      <button class="btn-close" onclick="closeOrderDetail()">✕</button>
+    </div>
+    <div class="modal-body" id="odBody"></div>
+    <div class="modal-foot" style="justify-content:space-between;align-items:center;">
+      <span style="color:#6b7280;">ລວມເງິນ</span>
+      <span class="foot-total" id="odTotal" style="color:#6c63ff;">0 ກີບ</span>
+    </div>
+  </div>
+</div>
+
+<!-- SUMMARY MODAL -->
+<div class="modal" id="summaryModal" onclick="if(event.target===this)closeSummary()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-title">📊 ສະຫຼຸບຍອດຂາຍສິນຄ້າ</div>
+      <button class="btn-close" onclick="closeSummary()">✕</button>
+    </div>
+    <div class="modal-body" id="summaryBody"></div>
+    <div class="modal-foot" style="justify-content:space-between;align-items:center;">
+      <span style="color:#6b7280;">ຍອດຂາຍລວມທັງໝົດ</span>
+      <span class="foot-total" id="summaryTotal" style="color:#22c55e;">0 ກີບ</span>
+    </div>
+  </div>
+</div>
+
+<!-- MANAGE PRODUCTS MODAL -->
+<div class="modal" id="manageModal" onclick="if(event.target===this)closeManage()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-title">🛠️ ຈັດການສິນຄ້າ / ລາຄາ</div>
+      <button class="btn-close" onclick="closeManage()">✕</button>
+    </div>
+    <div class="modal-body">
+      <button class="btn-addnew" onclick="openProductEdit(null)">+ ເພີ່ມສິນຄ້າໃໝ່</button>
+      <div id="manageList"></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn-reset" onclick="resetProducts()">↺ ກັບໄປໃຊ້ສິນຄ້າ/ລາຄາເລີ່ມຕົ້ນ</button>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT EDIT MODAL -->
+<div class="modal" id="productEditModal" onclick="if(event.target===this)closeProductEdit()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-title" id="peTitle">ແກ້ໄຂສິນຄ້າ</div>
+      <button class="btn-close" onclick="closeProductEdit()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="field"><label>ຊື່ສິນຄ້າ</label><input type="text" id="peName" placeholder="ເຊັ່ນ ເບຍລາວ ລັງ"></div>
+      <div class="field"><label>ລາຄາ (ກີບ)</label><input type="number" id="pePrice" inputmode="numeric" placeholder="0"></div>
+      <div class="field"><label>ໝວດ</label>
+        <select id="peCategory">
+          <option value="beer">🍺 ເບຍ</option>
+          <option value="soda">🥤 ນ້ຳອັດລົມ</option>
+          <option value="water">💧 ນ້ຳດື່ມ</option>
+          <option value="energy">⚡ ນ້ຳບຳລຸງ</option>
+          <option value="Borrow">📤 ຢືມ</option>
+        </select>
+      </div>
+      <div class="field"><label>ໜ່ວຍ (ວ່າງໄດ້ — ເຊັ່ນ ລັງ / ແກັດ / ແພັກ)</label><input type="text" id="peUnit" placeholder="ລັງ"></div>
+      <div class="field"><label>ຂະໜາດ ML (ສຳລັບ soda — ວ່າງໄດ້)</label><input type="number" id="peSize" inputmode="numeric" placeholder="1225"></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn-danger" id="peDeleteBtn" onclick="deleteProduct(editingProductId)" style="display:none;">🗑️ ລຶບ</button>
+      <button class="btn-save" onclick="saveProductEdit()">💾 ບັນທຶກ</button>
+    </div>
+  </div>
+</div>
+
+<!-- BEER-1 COUNTER MODAL (ລາຍຊື່ລູກຄ້າ) -->
+<div class="modal" id="beer1Modal" onclick="if(event.target===this)closeBeer1()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-title">🍺 ນັບເບຍລາວ ລັງ — ຕາມລູກຄ້າ</div>
+      <button class="btn-close" onclick="closeBeer1()">✕</button>
+    </div>
+    <div class="modal-body" id="beer1List"></div>
+  </div>
+</div>
+
+<!-- BEER-1 CUSTOMER DETAIL MODAL -->
+<div class="modal" id="beer1DetailModal" onclick="if(event.target===this)closeBeer1Detail()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-title" id="b1dTitle">🍺 ລູກຄ້າ</div>
+      <button class="btn-close" onclick="closeBeer1Detail()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="b1-stats" id="b1dStats"></div>
+      <div id="b1dBody"></div>
+    </div>
+  </div>
+</div>
+
 <script>
 // ===== SAFE STORAGE (iOS Safari file:// safe) =====
 var safeStorage = {
@@ -494,7 +732,7 @@ var DEFAULT_CUSTOMERS = [
   'ນາງຫຼ້າບໍ່ດິນ ','ເອື້ອຍນາງຫຼ້າບໍ່ດິນ ','ຟອດໄຊມຸງຄຸນ'
 ];
 
-var products = [
+var DEFAULT_PRODUCTS = [
   { id: 1, name: 'ເບຍລາວ ລັງ', price: 240000, category: 'beer', unit: 'ລັງ' },
   { id: 2, name: 'ເບຍກະປ໋ອງຍາວ ແກັດ', price: 444000, category: 'beer', unit: 'ແກັດ' },
   { id: 3, name: 'ເບຍກະປ໋ອງສັ້ນ ແກັດ', price: 303000, category: 'beer', unit: 'ແກັດ' },
@@ -577,9 +815,46 @@ var categoryNames = {
   Borrow: '📤 ຢືມ'
 };
 
+// ===== LOAD PRODUCTS (localStorage override + ໃສ່ size soda ອັດຕະໂນມັດ) =====
+var products;
+
+function deriveSizes() {
+  for (var pi = 0; pi < products.length; pi++) {
+    if (products[pi].size === undefined) {
+      var sm = products[pi].category === 'soda' ? String(products[pi].name).match(/([\d,]+)\s*ML/i) : null;
+      products[pi].size = sm ? Number(sm[1].replace(/,/g, '')) : null;
+    }
+  }
+}
+
+function defaultProductsCopy() {
+  return DEFAULT_PRODUCTS.map(function(p) {
+    return { id: p.id, name: p.name, price: p.price, category: p.category, unit: p.unit };
+  });
+}
+
+function loadProducts() {
+  var saved = safeStorage.get('pos_products');
+  if (saved) {
+    try {
+      var arr = JSON.parse(saved);
+      if (Array.isArray(arr) && arr.length) { products = arr; deriveSizes(); return; }
+    } catch(e) {}
+  }
+  products = defaultProductsCopy();
+  deriveSizes();
+}
+
+function saveProducts() {
+  safeStorage.set('pos_products', JSON.stringify(products));
+}
+
+loadProducts();
+
 // ===== STATE =====
 var cart = [];
 var selectedCategory = 'all';
+var selectedSize = 'all';
 var selectedUnit = 'all';
 var searchTerm = '';
 var customers;
@@ -612,6 +887,7 @@ function renderCategories() {
 
 function selectCategory(c) {
   selectedCategory = c;
+  selectedSize = 'all';
   // ຖ້າໜ່ວຍທີ່ເລືອກຢູ່ ບໍ່ມີໃນໝວດໝູ່ໃໝ່ → ຣີເຊັດເປັນ "ທຸກໜ່ວຍ"
   if (selectedUnit !== 'all') {
     var stillValid = false;
@@ -624,7 +900,40 @@ function selectCategory(c) {
     if (!stillValid) selectedUnit = 'all';
   }
   renderCategories();
+  renderSizeChips();
   renderUnits();
+  renderProducts();
+}
+
+// ===== RENDER SIZE CHIPS (ສະແດງສະເພາະ soda) =====
+function renderSizeChips() {
+  var el = document.getElementById('sizeChips');
+  if (selectedCategory !== 'soda') {
+    el.style.display = 'none';
+    el.innerHTML = '';
+    selectedSize = 'all';
+    return;
+  }
+  var sizes = [];
+  for (var i = 0; i < products.length; i++) {
+    var p = products[i];
+    if (p.category !== 'soda' || p.size == null) continue;
+    if (sizes.indexOf(p.size) === -1) sizes.push(p.size);
+  }
+  sizes.sort(function(a, b) { return a - b; });
+  var html = '<button class="chip' + (selectedSize === 'all' ? ' active-size' : '') + '" onclick="selectSize(\'all\')">ທຸກຂະໜາດ</button>';
+  for (var j = 0; j < sizes.length; j++) {
+    var s = sizes[j];
+    var active = String(selectedSize) === String(s) ? ' active-size' : '';
+    html += '<button class="chip' + active + '" onclick="selectSize(\'' + s + '\')">' + s + ' ML</button>';
+  }
+  el.innerHTML = html;
+  el.style.display = '';
+}
+
+function selectSize(v) {
+  selectedSize = v;
+  renderSizeChips();
   renderProducts();
 }
 
@@ -658,11 +967,12 @@ function renderProducts() {
   for (var i = 0; i < products.length; i++) {
     var p = products[i];
     var matchCat = selectedCategory === 'all' || p.category === selectedCategory;
+    var matchSize = selectedSize === 'all' || (p.size != null && p.size === Number(selectedSize));
     var matchUnit = selectedUnit === 'all' || p.unit === selectedUnit;
     var matchSearch = !searchTerm ||
       p.name.toLowerCase().indexOf(searchTerm) !== -1 ||
       String(p.price).indexOf(searchTerm) !== -1;
-    if (matchCat && matchUnit && matchSearch) filtered.push(p);
+    if (matchCat && matchSize && matchUnit && matchSearch) filtered.push(p);
   }
 
   var grid = document.getElementById('productsGrid');
@@ -676,7 +986,10 @@ function renderProducts() {
     var p = filtered[j];
     html += '<button class="product-card" onclick="addToCart(' + p.id + ')">';
     html += '<div class="product-name">' + p.name + '</div>';
-    if (p.unit) html += '<div class="product-unit">' + p.unit + '</div>';
+    var meta = [];
+    if (p.size) meta.push(p.size + ' ML');
+    if (p.unit) meta.push(p.unit);
+    if (meta.length) html += '<div class="product-unit">' + meta.join(' · ') + '</div>';
     html += '<div class="product-price">' + p.price.toLocaleString() + ' ກີບ</div>';
     html += '</button>';
   }
@@ -693,8 +1006,10 @@ function clearSearch() {
   document.getElementById('searchInput').value = '';
   searchTerm = '';
   selectedCategory = 'all';
+  selectedSize = 'all';
   selectedUnit = 'all';
   renderCategories();
+  renderSizeChips();
   renderUnits();
   renderProducts();
 }
@@ -936,15 +1251,380 @@ function printReceipt() {
   setTimeout(function() {
     try { win.print(); } catch(e) {}
   }, 800);
+
+  saveOrderToHistory();
+}
+
+// ===== ORDER HISTORY =====
+function loadHistory() {
+  try { return JSON.parse(safeStorage.get('pos_order_history') || '[]'); } catch(e) { return []; }
+}
+
+function saveOrderToHistory() {
+  var history = loadHistory();
+  var now = new Date();
+  var order = {
+    id: 'ord_' + Date.now(),
+    shopName: (document.getElementById('shopNameInput').value || '').trim() || 'ບໍ່ລະບຸຮ້ານ',
+    date: now.getDate() + '/' + (now.getMonth() + 1) + '/' + now.getFullYear(),
+    time: now.toLocaleTimeString('lo-LA', { hour: '2-digit', minute: '2-digit' }),
+    items: cart.map(function(i) { return { id: i.id, name: i.name, price: i.price, quantity: i.quantity }; }),
+    total: getTotal()
+  };
+  history.unshift(order);
+  safeStorage.set('pos_order_history', JSON.stringify(history));
+  updateHistoryBadge();
+  syncBeer1FromOrder(order);
+}
+
+function updateHistoryBadge() {
+  var count = loadHistory().length;
+  var badge = document.getElementById('historyBadge');
+  if (!badge) return;
+  if (count > 0) { badge.textContent = count; badge.style.display = 'inline'; }
+  else { badge.style.display = 'none'; }
+}
+
+function openHistory() { renderHistory(); document.getElementById('historyModal').classList.add('open'); }
+function closeHistory() { document.getElementById('historyModal').classList.remove('open'); }
+
+function findOrder(id) {
+  var h = loadHistory();
+  for (var i = 0; i < h.length; i++) if (h[i].id === id) return h[i];
+  return null;
+}
+
+function renderHistory() {
+  var history = loadHistory();
+  var list = document.getElementById('historyList');
+  if (history.length === 0) {
+    list.innerHTML = '<div class="empty-pad">🧾<br><br>ຍັງບໍ່ມີປະວັດອໍເດີ</div>';
+    return;
+  }
+  var html = '';
+  for (var i = 0; i < history.length; i++) {
+    var o = history[i];
+    var qty = 0;
+    for (var k = 0; k < o.items.length; k++) qty += o.items[k].quantity;
+    html += '<div class="h-item" onclick="viewOrderDetail(\'' + o.id + '\')">';
+    html += '<div class="h-item-top"><span class="h-item-shop">' + o.shopName + '</span>';
+    html += '<span class="h-item-total">' + o.total.toLocaleString() + ' ກີບ</span>';
+    html += '<button class="h-item-del" onclick="deleteOrder(\'' + o.id + '\', event)">✕</button></div>';
+    html += '<div class="h-item-meta"><span>📅 ' + o.date + ' ' + o.time + '</span><span>📦 ' + qty + ' ລາຍການ</span></div>';
+    html += '<button class="h-reorder-btn" onclick="reorderFromHistory(\'' + o.id + '\', event)">↩ ນຳໃຊ້ຄືນ</button>';
+    html += '</div>';
+  }
+  list.innerHTML = html;
+}
+
+function deleteOrder(id, e) {
+  if (e) e.stopPropagation();
+  var history = loadHistory().filter(function(o) { return o.id !== id; });
+  safeStorage.set('pos_order_history', JSON.stringify(history));
+  updateHistoryBadge();
+  renderHistory();
+}
+
+function clearAllHistory() {
+  if (loadHistory().length === 0) return;
+  if (!confirm('ລ້າງປະວັດທັງໝົດ?')) return;
+  safeStorage.set('pos_order_history', '[]');
+  updateHistoryBadge();
+  renderHistory();
+}
+
+function viewOrderDetail(id) {
+  var order = findOrder(id);
+  if (!order) return;
+  document.getElementById('odTitle').textContent = '🏪 ' + order.shopName;
+  var html = '';
+  for (var i = 0; i < order.items.length; i++) {
+    var it = order.items[i];
+    html += '<div class="list-row"><span class="num">' + (i + 1) + '</span><span class="nm">' + it.name + '</span><span class="qty">×' + it.quantity + '</span><span class="pr">' + (it.price * it.quantity).toLocaleString() + ' ກີບ</span></div>';
+  }
+  document.getElementById('odBody').innerHTML = html;
+  document.getElementById('odTotal').textContent = order.total.toLocaleString() + ' ກີບ';
+  document.getElementById('orderDetailModal').classList.add('open');
+}
+
+function closeOrderDetail() { document.getElementById('orderDetailModal').classList.remove('open'); }
+
+function reorderFromHistory(id, e) {
+  if (e) e.stopPropagation();
+  var order = findOrder(id);
+  if (!order) return;
+  cart = order.items.map(function(i) {
+    var full = null;
+    for (var k = 0; k < products.length; k++) if (products[k].id === i.id) { full = products[k]; break; }
+    if (full) return { id: full.id, name: full.name, price: full.price, unit: full.unit, category: full.category, quantity: i.quantity };
+    return { id: i.id, name: i.name, price: i.price, unit: null, category: null, quantity: i.quantity };
+  });
+  document.getElementById('shopNameInput').value = order.shopName === 'ບໍ່ລະບຸຮ້ານ' ? '' : order.shopName;
+  updateCartBar();
+  closeHistory();
+  openCartModal();
+}
+
+// ===== SUMMARY =====
+function openSummary() {
+  var history = loadHistory();
+  var totals = {};
+  var grand = 0;
+  for (var i = 0; i < history.length; i++) {
+    var o = history[i];
+    for (var k = 0; k < o.items.length; k++) {
+      var it = o.items[k];
+      if (!totals[it.id]) totals[it.id] = { name: it.name, quantity: 0, revenue: 0 };
+      totals[it.id].quantity += it.quantity;
+      totals[it.id].revenue += it.price * it.quantity;
+    }
+    grand += o.total;
+  }
+  var arr = [];
+  for (var key in totals) if (totals.hasOwnProperty(key)) arr.push(totals[key]);
+  arr.sort(function(a, b) { return b.quantity - a.quantity; });
+  var body = document.getElementById('summaryBody');
+  if (arr.length === 0) {
+    body.innerHTML = '<div class="empty-pad">📊<br><br>ຍັງບໍ່ມີຂໍ້ມູນການຂາຍ</div>';
+  } else {
+    var html = '';
+    for (var j = 0; j < arr.length; j++) {
+      html += '<div class="list-row"><span class="num">' + (j + 1) + '</span><span class="nm">' + arr[j].name + '</span><span class="qty">×' + arr[j].quantity + '</span><span class="pr">' + arr[j].revenue.toLocaleString() + ' ກີບ</span></div>';
+    }
+    body.innerHTML = html;
+  }
+  document.getElementById('summaryTotal').textContent = grand.toLocaleString() + ' ກີບ';
+  document.getElementById('summaryModal').classList.add('open');
+}
+
+function closeSummary() { document.getElementById('summaryModal').classList.remove('open'); }
+
+// ===== PRODUCT MANAGEMENT =====
+var editingProductId = null;
+
+function openManage() {
+  renderManageList();
+  document.getElementById('manageModal').classList.add('open');
+}
+
+function closeManage() {
+  document.getElementById('manageModal').classList.remove('open');
+}
+
+function renderManageList() {
+  var html = '';
+  for (var i = 0; i < products.length; i++) {
+    var p = products[i];
+    var meta = [categoryNames[p.category] || p.category];
+    if (p.size) meta.push(p.size + ' ML');
+    if (p.unit) meta.push(p.unit);
+    html += '<div class="mng-row">';
+    html += '<div class="mng-info"><div class="mng-name">' + p.name + '</div><div class="mng-meta">' + meta.join(' · ') + '</div></div>';
+    html += '<div class="mng-price">' + p.price.toLocaleString() + '</div>';
+    html += '<button class="mng-edit" onclick="openProductEdit(' + p.id + ')">✏️</button>';
+    html += '<button class="mng-del" onclick="deleteProduct(' + p.id + ')">🗑️</button>';
+    html += '</div>';
+  }
+  document.getElementById('manageList').innerHTML = html;
+}
+
+function openProductEdit(id) {
+  editingProductId = id;
+  var p = null;
+  if (id != null) {
+    for (var i = 0; i < products.length; i++) {
+      if (products[i].id === id) { p = products[i]; break; }
+    }
+  }
+  document.getElementById('peTitle').textContent = p ? 'ແກ້ໄຂສິນຄ້າ' : 'ເພີ່ມສິນຄ້າໃໝ່';
+  document.getElementById('peName').value = p ? p.name : '';
+  document.getElementById('pePrice').value = p ? p.price : '';
+  document.getElementById('peCategory').value = p ? p.category : 'beer';
+  document.getElementById('peUnit').value = (p && p.unit) ? p.unit : '';
+  document.getElementById('peSize').value = (p && p.size) ? p.size : '';
+  document.getElementById('peDeleteBtn').style.display = p ? '' : 'none';
+  document.getElementById('productEditModal').classList.add('open');
+}
+
+function closeProductEdit() {
+  document.getElementById('productEditModal').classList.remove('open');
+}
+
+function saveProductEdit() {
+  var name = document.getElementById('peName').value.trim();
+  var price = parseInt(document.getElementById('pePrice').value, 10);
+  var category = document.getElementById('peCategory').value;
+  var unitRaw = document.getElementById('peUnit').value.trim();
+  var sizeRaw = document.getElementById('peSize').value.trim();
+  if (!name) { alert('ກະລຸນາໃສ່ຊື່ສິນຄ້າ'); return; }
+  if (isNaN(price) || price < 0) { alert('ກະລຸນາໃສ່ລາຄາທີ່ຖືກຕ້ອງ'); return; }
+  var unit = unitRaw || null;
+  var size = sizeRaw ? Number(String(sizeRaw).replace(/,/g, '')) : null;
+  if (size != null && isNaN(size)) size = null;
+
+  if (editingProductId != null) {
+    for (var i = 0; i < products.length; i++) {
+      if (products[i].id === editingProductId) {
+        products[i].name = name;
+        products[i].price = price;
+        products[i].category = category;
+        products[i].unit = unit;
+        products[i].size = size;
+        break;
+      }
+    }
+  } else {
+    var maxId = 0;
+    for (var j = 0; j < products.length; j++) if (products[j].id > maxId) maxId = products[j].id;
+    products.push({ id: maxId + 1, name: name, price: price, category: category, unit: unit, size: size });
+  }
+  saveProducts();
+  closeProductEdit();
+  refreshAfterProductChange();
+}
+
+function deleteProduct(id) {
+  if (!confirm('ລຶບສິນຄ້ານີ້ອອກ?')) return;
+  products = products.filter(function(p) { return p.id !== id; });
+  saveProducts();
+  if (editingProductId === id) closeProductEdit();
+  refreshAfterProductChange();
+}
+
+function resetProducts() {
+  if (!confirm('ກັບໄປໃຊ້ສິນຄ້າ/ລາຄາເລີ່ມຕົ້ນ? ການແກ້ໄຂທີ່ບັນທຶກໄວ້ຈະຫາຍ.')) return;
+  try { localStorage.removeItem('pos_products'); } catch(e) {}
+  safeStorage.set('pos_products', '');
+  products = defaultProductsCopy();
+  deriveSizes();
+  refreshAfterProductChange();
+}
+
+function refreshAfterProductChange() {
+  renderManageList();
+  renderCategories();
+  renderSizeChips();
+  renderUnits();
+  renderProducts();
+}
+
+// ===== ນັບເບຍລາວ ລັງ (id 1) ຕາມລູກຄ້າ =====
+var BEER1_KEY = 'pos_beer1_history';
+var b1CurrentCustomer = null;
+
+function loadBeer1() { try { return JSON.parse(safeStorage.get(BEER1_KEY) || '[]'); } catch(e) { return []; } }
+function saveBeer1(data) { safeStorage.set(BEER1_KEY, JSON.stringify(data)); }
+
+// ເອີ້ນຈາກ saveOrderToHistory — sync ອັດຕະໂນມັດ ເມື່ອບິນມີ ເບຍລາວ ລັງ (id 1)
+function syncBeer1FromOrder(order) {
+  var item1 = null;
+  for (var i = 0; i < order.items.length; i++) if (order.items[i].id === 1) { item1 = order.items[i]; break; }
+  if (!item1) return;
+  var data = loadBeer1();
+  data.unshift({ id: 'b1_' + Date.now(), customerName: order.shopName || 'ບໍ່ລະບຸຮ້ານ', date: order.date, time: order.time, qty: item1.quantity });
+  saveBeer1(data);
+}
+
+function getBeer1ByCustomer() {
+  var raw = loadBeer1();
+  var map = {};
+  for (var i = 0; i < raw.length; i++) {
+    var r = raw[i];
+    if (!map[r.customerName]) map[r.customerName] = { name: r.customerName, totalQty: 0, orders: [] };
+    map[r.customerName].totalQty += r.qty;
+    map[r.customerName].orders.push(r);
+  }
+  var arr = [];
+  for (var k in map) if (map.hasOwnProperty(k)) arr.push(map[k]);
+  arr.sort(function(a, b) { return b.totalQty - a.totalQty; });
+  return arr;
+}
+
+function openBeer1() { renderBeer1List(); document.getElementById('beer1Modal').classList.add('open'); }
+function closeBeer1() { document.getElementById('beer1Modal').classList.remove('open'); }
+
+function renderBeer1List() {
+  var data = getBeer1ByCustomer();
+  var list = document.getElementById('beer1List');
+  if (data.length === 0) {
+    list.innerHTML = '<div class="empty-pad">🍺<br><br>ຍັງບໍ່ມີຂໍ້ມູນການຊື້ ເບຍລາວ ລັງ<br><span style="font-size:12px;">(ຈະບັນທຶກອັດຕະໂນມັດເມື່ອພິມບິນທີ່ມີ ເບຍລາວ ລັງ)</span></div>';
+    return;
+  }
+  var medals = ['🥇', '🥈', '🥉'];
+  var html = '';
+  for (var i = 0; i < data.length; i++) {
+    var c = data[i];
+    var icon = i < 3 ? medals[i] : '👤';
+    var safe = c.name.replace(/'/g, "\\'");
+    html += '<div class="b1-card" onclick="openBeer1Detail(\'' + safe + '\')">';
+    html += '<div class="b1-icon">' + icon + '</div>';
+    html += '<div class="b1-info"><div class="b1-name">' + c.name + '</div><div class="b1-meta">ສັ່ງ ' + c.orders.length + ' ຄັ້ງ · ກົດເພື່ອເບິ່ງ/ແກ້</div></div>';
+    html += '<div class="b1-total">' + c.totalQty + ' ລັງ</div>';
+    html += '</div>';
+  }
+  list.innerHTML = html;
+}
+
+function openBeer1Detail(name) { b1CurrentCustomer = name; renderBeer1Detail(); document.getElementById('beer1DetailModal').classList.add('open'); }
+function closeBeer1Detail() { document.getElementById('beer1DetailModal').classList.remove('open'); b1CurrentCustomer = null; }
+
+function renderBeer1Detail() {
+  var data = getBeer1ByCustomer();
+  var c = null;
+  for (var i = 0; i < data.length; i++) if (data[i].name === b1CurrentCustomer) { c = data[i]; break; }
+  if (!c) { closeBeer1Detail(); return; }
+  document.getElementById('b1dTitle').textContent = '🍺 ' + c.name;
+  var avg = c.orders.length > 0 ? Math.round(c.totalQty / c.orders.length * 10) / 10 : 0;
+  document.getElementById('b1dStats').innerHTML =
+    '<div class="b1-stat"><div class="b1-stat-val">' + c.totalQty + '</div><div class="b1-stat-label">ລັງລວມ</div></div>' +
+    '<div class="b1-stat"><div class="b1-stat-val">' + c.orders.length + '</div><div class="b1-stat-label">ຈຳນວນຄັ້ງ</div></div>' +
+    '<div class="b1-stat"><div class="b1-stat-val">' + avg + '</div><div class="b1-stat-label">ສະເລ່ຍ/ຄັ້ງ</div></div>';
+  var html = '';
+  for (var j = 0; j < c.orders.length; j++) {
+    var o = c.orders[j];
+    html += '<div class="b1-entry"><div class="b1-entry-top"><span class="b1-entry-num">ຄັ້ງທີ ' + (j + 1) + '</span><span class="b1-entry-date">📅 ' + o.date + ' ' + o.time + '</span><button class="b1-entry-del" onclick="deleteBeer1Entry(\'' + o.id + '\')">✕</button></div><div class="b1-entry-qty">' + o.qty + ' <span style="font-size:12px;font-weight:normal;color:#6b7280;">ລັງ</span></div></div>';
+  }
+  var now = new Date();
+  var today = now.getDate() + '/' + (now.getMonth() + 1) + '/' + now.getFullYear();
+  html += '<div class="b1-addform"><div style="font-size:12px;color:#6c63ff;font-weight:bold;margin-bottom:8px;">➕ ເພີ່ມຂໍ້ມູນເອງ</div><div class="b1-addform-row">';
+  html += '<div style="flex:1;min-width:90px;"><div style="font-size:11px;color:#6b7280;margin-bottom:4px;">ວັນທີ</div><input type="text" id="b1AddDate" value="' + today + '"></div>';
+  html += '<div style="flex:1;min-width:70px;"><div style="font-size:11px;color:#6b7280;margin-bottom:4px;">ຈຳນວນ (ລັງ)</div><input type="number" id="b1AddQty" min="1" placeholder="0"></div>';
+  html += '<button class="btn-save" style="flex:0 0 auto;padding:9px 16px;" onclick="addBeer1Entry()">ບັນທຶກ</button>';
+  html += '</div></div>';
+  document.getElementById('b1dBody').innerHTML = html;
+}
+
+function deleteBeer1Entry(id) {
+  if (!confirm('ລົບລາຍການນີ້?')) return;
+  var data = loadBeer1().filter(function(e) { return e.id !== id; });
+  saveBeer1(data);
+  renderBeer1Detail();
+  renderBeer1List();
+}
+
+function addBeer1Entry() {
+  var dateVal = document.getElementById('b1AddDate').value.trim();
+  var qtyVal = parseInt(document.getElementById('b1AddQty').value, 10);
+  if (!dateVal) { alert('ກະລຸນາໃສ່ວັນທີ'); return; }
+  if (!qtyVal || qtyVal < 1) { alert('ກະລຸນາໃສ່ຈຳນວນ'); return; }
+  var now = new Date();
+  var timeStr = now.toLocaleTimeString('lo-LA', { hour: '2-digit', minute: '2-digit' });
+  var data = loadBeer1();
+  data.unshift({ id: 'b1_' + Date.now(), customerName: b1CurrentCustomer, date: dateVal, time: timeStr, qty: qtyVal });
+  saveBeer1(data);
+  renderBeer1Detail();
+  renderBeer1List();
 }
 
 // ===== INIT =====
 function initApp() {
   try {
     renderCategories();
+    renderSizeChips();
     renderUnits();
     renderProducts();
     updateCartBar();
+    updateHistoryBadge();
   } catch(e) {
     alert('Error: ' + e.message);
   }
